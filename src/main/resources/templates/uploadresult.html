@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Result</title>
+</head>
+<body>
+<h1>Upload Result</h1>
+<table class="striped">
+  <thead>
+  <tr>
+    <th style="align=centr">Product</th>
+    <th style="align=centr">Message</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each = "result: ${uploadresult}">
+    <td th:text="${result.productNr}" style="align=centr"></td>
+    <td th:text="${result.message}" style="align=centr"></td>
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>
